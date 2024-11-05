@@ -15,27 +15,17 @@ class _IsiLinkTreeState extends State<IsiLinkTree> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        CardForlinkTree(
-          text: '+91 123 456 789',
-          icon: Icons.phone,
+        const CardForlinkTree(
+          text: 'My Orders',
+          icon: Icons.local_movies,
         ),
         const CardForlinkTree(
-          text: 'goyounjung@gmail.com',
-          icon: Icons.email,
+          text: 'Edit Profile',
+          icon: Icons.mode_edit,
         ),
-        CardForlinkTree(
-          text: 'Instagram',
-          icon: FontAwesomeIcons.instagram,
-          onPressed: () {
-            Direct.launchURL('https://www.instagram.com/goyounjung');
-          },
-        ),
-        CardForlinkTree(
-          text: 'Facebook',
-          icon: FontAwesomeIcons.facebook,
-          onPressed: () {
-            Direct.launchURL('https://www.facebook.com/Goyooonjung');
-          },
+        const CardForlinkTree(
+          text: 'History',
+          icon: Icons.menu_book_outlined,
         ),
       ],
     );

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:gd1_d_1891/elementLinkTree.dart';
 import 'package:gd1_d_1891/utilities/constant.dart';
 
 class IsiLogo extends StatefulWidget {
@@ -12,14 +13,13 @@ class IsiLogo extends StatefulWidget {
 class _IsiLogoState extends State<IsiLogo> {
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        const Icon(FontAwesomeIcons.github),
-        kSizeBox2,
-        const Icon(FontAwesomeIcons.user),
-        kSizeBox2,
-        const Icon(FontAwesomeIcons.googleDrive),
+        const CardForlinkTree(
+          text: 'Logout',
+          icon: Icons.logout,
+        ),
       ],
     );
   }

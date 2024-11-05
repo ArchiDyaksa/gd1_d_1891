@@ -14,20 +14,19 @@ class ShowProfile extends StatelessWidget {
           child: Column(
             children: [
               Container(
-                margin: EdgeInsets.only(top: 50),
+                margin: const EdgeInsets.only(top: 50),
                 child: Row(
                   children: [
                     kSizeBox2,
-                    CircleAvatar(
+                    const CircleAvatar(
                       radius: 50,
                       backgroundImage: AssetImage('images/download.jpeg')),
                     kSizeBox2,
                     Container(
-                      child: Column(
+                      child: const Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          Text('Go Younjung', style: kTextStyle4),
-                          Text('Artist', style: kTextStyle5),
+                          Text('Suranto', style: kTextStyle4),
                         ],
                       ),
                     )
@@ -35,12 +34,12 @@ class ShowProfile extends StatelessWidget {
                 ),
               ),
               Container(
-                margin: EdgeInsets.only(top: 50),
+                margin: const EdgeInsets.only(top: 50),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Container(
-                      child: Column(
+                      child: const Column(
                         children: [
                           Text('374', style: kTextStyle2),
                           Text('Posts', style: kTextStyle3),
@@ -48,7 +47,7 @@ class ShowProfile extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      child: Column(
+                      child: const Column(
                         children: [
                           Text('7,5m', style: kTextStyle2),
                           Text('Followers', style: kTextStyle3),
@@ -56,7 +55,7 @@ class ShowProfile extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      child: Column(
+                      child: const Column(
                         children: [
                           Text('1', style: kTextStyle2),
                           Text('Following', style: kTextStyle3),
@@ -67,7 +66,7 @@ class ShowProfile extends StatelessWidget {
                 ),
               ),
               kSizeBox,
-              IsiShowProfile()
+              const IsiShowProfile()
             ],
           ),
         ),
@@ -75,8 +74,8 @@ class ShowProfile extends StatelessWidget {
           onPressed: () {
             Navigator.pop(context);
           },
-          child: Icon(Icons.arrow_back),
           backgroundColor: Colors.teal,
+          child: Icon(Icons.arrow_back),
         ),
       ),
     );

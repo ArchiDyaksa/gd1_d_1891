@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const kColor = Color.fromARGB(255, 228, 105, 132);
+const kColor = Color.fromARGB(0, 0, 0, 0);
 
 const SizedBox kSizeBox2 = SizedBox(
   width: 20,
